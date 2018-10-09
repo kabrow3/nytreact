@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.90fc100d.chunk.css",
-  "main.js": "/static/js/main.8c42943e.chunk.js",
-  "main.js.map": "/static/js/main.8c42943e.chunk.js.map",
-  "static/js/1.33bb9eb0.chunk.js": "/static/js/1.33bb9eb0.chunk.js",
-  "static/js/1.33bb9eb0.chunk.js.map": "/static/js/1.33bb9eb0.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.90fc100d.chunk.css.map": "/static/css/main.90fc100d.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.0f19ccb017c5ee30729e4a40d480ea55.js": "/precache-manifest.0f19ccb017c5ee30729e4a40d480ea55.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/nytreact/static/css/main.90fc100d.chunk.css",
+  "main.js": "/nytreact/static/js/main.a43feb0e.chunk.js",
+  "main.js.map": "/nytreact/static/js/main.a43feb0e.chunk.js.map",
+  "static/js/1.33bb9eb0.chunk.js": "/nytreact/static/js/1.33bb9eb0.chunk.js",
+  "static/js/1.33bb9eb0.chunk.js.map": "/nytreact/static/js/1.33bb9eb0.chunk.js.map",
+  "runtime~main.js": "/nytreact/static/js/runtime~main.229a215d.js",
+  "runtime~main.js.map": "/nytreact/static/js/runtime~main.229a215d.js.map",
+  "static/css/main.90fc100d.chunk.css.map": "/nytreact/static/css/main.90fc100d.chunk.css.map",
+  "index.html": "/nytreact/index.html",
+  "precache-manifest.880b4a5a840780f35d8ffe7e53211fc0.js": "/nytreact/precache-manifest.880b4a5a840780f35d8ffe7e53211fc0.js",
+  "service-worker.js": "/nytreact/service-worker.js"
 }

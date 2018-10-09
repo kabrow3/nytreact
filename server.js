@@ -19,12 +19,22 @@ app.use(routes);
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/nytreact",
-  {
-    useMongoClient: true
-  }
-);
+var databaseUri = "mongodb://localhost/nytreact";
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+} else {
+  mongoose.connect(databaseUri);
+}
+
+var db = mongoose.connection;
+
+db.on('error', function(err) {
+  console.log('Mongoose Error: ', err);
+});
+
+db.once('open', function() {
+  console.log('Mongoose connection successful.');
+});
 
 // Start the API server
 const PORT = process.env.PORT || 3001;
