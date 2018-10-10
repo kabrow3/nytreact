@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.use(routes);
 
 // Set up promises with mongoose
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 var databaseUri = "mongodb://localhost/nytreact";
 if (process.env.MONGODB_URI) {
