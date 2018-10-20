@@ -5,35 +5,35 @@
   "homepage": "https://kabrow3.github.io/nytreact",
   "main": "server.js",
   "scripts": {
-    "server": "node server.js",
-    "client": "node scripts/start-client.js",
-    "start": "node server.js npm run client",
-    "build": "node scripts/build.js",
-    "seed": "node scripts/seedDB.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "yarn run build",
-    "deploy": "cd client && gh-pages -d build",
-    "installDeps": "yarn && cd client && yarn"
+  "server": "node server.js",
+  "client": "node scripts/start-client.js",
+  "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+  "build": "node scripts/build.js",
+  "seed": "node scripts/seedDB.js",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "predeploy": "yarn run build",
+  "deploy": "gh-pages -d build",
+  "installDeps": "yarn && cd client && yarn"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "case-sensitive-paths-webpack-plugin": "^2.1.2",
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+  "case-sensitive-paths-webpack-plugin": "^2.1.2",
+  "concurrently": "^3.5.0",
+  "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "gh-pages": "^2.0.1",
-    "moment": "^2.20.1",
-    "mongoose": "^4.11.7",
-    "morgan": "^1.9.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-router-dom": "^4.1.2",
-    "react-scripts": "^2.0.3",
-    "nodemon": "^1.11.0"
+  "axios": "^0.16.2",
+  "body-parser": "^1.17.2",
+  "express": "^4.15.4",
+  "gh-pages": "^2.0.1",
+  "moment": "^2.20.1",
+  "mongoose": "^4.11.7",
+  "morgan": "^1.9.0",
+  "react": "^16.5.2",
+  "react-dom": "^16.5.2",
+  "react-router-dom": "^4.1.2",
+  "react-scripts": "^2.0.3"
   }
+
 }
